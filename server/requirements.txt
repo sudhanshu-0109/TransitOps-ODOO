@@ -1,0 +1,43 @@
+# ═══════════════════════════════════════════════════════════════
+# TransitOps — Server Requirements
+# Node.js >= 18.x required
+# ═══════════════════════════════════════════════════════════════
+
+# ── Core Framework ────────────────────────────────────────────
+express@^5.0.0               # HTTP server framework (Express 5)
+cors@^2.8.5                  # Cross-Origin Resource Sharing
+helmet@^7.1.0                # Security headers
+morgan@^1.10.0               # HTTP request logger
+
+# ── Database ─────────────────────────────────────────────────
+@prisma/client@^6.10.1       # Prisma ORM client
+prisma@^6.10.1               # Prisma CLI (dev)
+
+# ── Auth & Security ───────────────────────────────────────────
+bcryptjs@^2.4.3              # Password hashing
+jsonwebtoken@^9.0.2          # JWT access/refresh tokens
+cookie-parser@^1.4.6         # Signed cookie parsing
+express-rate-limit@^7.1.0    # API rate limiting
+
+# ── Validation ───────────────────────────────────────────────
+zod@^3.23.8                  # Runtime schema validation
+
+# ── AI Copilot ────────────────────────────────────────────────
+@google/generative-ai@^0.24.1  # Gemini AI integration
+
+# ── Reporting / Export ───────────────────────────────────────
+json2csv@^6.0.0-alpha.2      # CSV export for analytics
+
+# ── Environment ──────────────────────────────────────────────
+dotenv@^16.3.1               # .env loader
+
+# ── Dev Dependencies ─────────────────────────────────────────
+nodemon@^3.0.2               # Auto-restart on file changes (devDependency)
+
+# ═══════════════════════════════════════════════════════════════
+# Install server deps:  cd server && npm install
+# Setup DB:             npx prisma generate && npx prisma db push
+# Seed DB:              npm run seed  (or: node prisma/seed.js)
+# Start dev:            npm run dev
+# Start prod:           npm start
+# ═══════════════════════════════════════════════════════════════
