@@ -399,3 +399,7 @@ TransitOps/
 | Settings | ✓ Full | — | — | — | — |
 
 ---
+## Notes
+ 
+- No live demo link is published with this README.
+- Diagrams use [Mermaid](https://mermaid.js.org/) syntax — they render automatically on GitHub.
